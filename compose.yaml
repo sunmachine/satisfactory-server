@@ -1,9 +1,10 @@
 version: '3'
 services:
     satisfactory-server:
-        container_name: 'satisfactory-server'
+        build: .
+        image: 'sunmachine/satisfactory-server:latest'
+        container_name: 'satisfactory-server-container'
         hostname: 'satisfactory-server'
-        image: 'wolveix/satisfactory-server:latest'
         ports:
             - '7777:7777/udp'
             - '15000:15000/udp'

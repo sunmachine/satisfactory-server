@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "HAHAHAHAHA"
+
 set -e
 
 if [[ "$DEBUG" == "true" ]]; then
